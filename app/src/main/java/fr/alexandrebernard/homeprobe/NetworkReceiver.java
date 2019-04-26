@@ -15,11 +15,10 @@ import android.widget.Toast;
 /*                 All right reserved                  */
 /*-----------------------------------------------------*/
 public class NetworkReceiver extends BroadcastReceiver {
+
 	@Override
 	public void onReceive(Context context, Intent intent) {
-
-		if(checkInternet(context))
-		{
+		if(checkInternet(context))	{
 			Toast.makeText(context, "Network Available Do operations",Toast.LENGTH_LONG).show();
 		}
 	}
