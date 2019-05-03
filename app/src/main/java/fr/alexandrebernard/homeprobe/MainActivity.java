@@ -28,21 +28,18 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 
 
-		final TextView tv = (TextView) findViewById(R.id.textView2);
-		tv.setText("-");
+		final TextView pgTextView = findViewById(R.id.powerGridLabel);
+		final TextView networkTextView = findViewById(R.id.networkLabel);
 
-		ActivityViewModel model = ViewModelProviders.of(this).get(ActivityViewModel.class);
-
-		Observer<String> aqaraObserver = new Observer<String>() {
-			@Override
-			public void onChanged(@Nullable String o) {
-				tv.setText(o);
-			}
-		};
-
-		model.getPlop().observe(this, aqaraObserver);
-
-
+//		ActivityViewModel model = ViewModelProviders.of(this).get(ActivityViewModel.class);
+//
+//		Observer<String> aqaraObserver = new Observer<String>() {
+//			@Override
+//			public void onChanged(@Nullable String o) {
+//				tv.setText(o);
+//			}
+//		};
+//		model.getPlop().observe(this, aqaraObserver);
 	}
 
 

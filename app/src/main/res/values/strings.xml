@@ -1,3 +1,8 @@
 <resources>
 	<string name="app_name">HomeProbe</string>
+	<string name="network">Network</string>
+	<string name="powerGrid">PowerGrid</string>
+	<string name="statusDown">Down</string>
+	<string name="statusUp">Up</string>
+	<string name="statusUnknow">Unknow</string>
 </resources>
